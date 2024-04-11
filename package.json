@@ -14,7 +14,11 @@
     "analysis:prisma:json": "clinic doctor --on-port 'autocannon localhost:3001'  -- node ./dist/index.js prisma",
     "analysis:prisma:no-json": "clinic doctor --on-port 'autocannon localhost:3001/without-json'  -- node ./dist/index.js prisma",
     "analysis:kysely:json": "clinic doctor --on-port 'autocannon localhost:3001'  -- node ./dist/index.js kysely",
-    "analysis:kysely:no-json": "clinic doctor --on-port 'autocannon localhost:3001/without-json'  -- node ./dist/index.js kysely"
+    "analysis:kysely:no-json": "clinic doctor --on-port 'autocannon localhost:3001/without-json'  -- node ./dist/index.js kysely",
+    "flamegraph:prisma:json": "pnpm clinic heapprofiler --on-port 'autocannon localhost:3001' -- node ./dist/index.js prisma",
+    "flamegraph:prisma:no-json": "pnpm clinic heapprofiler --on-port 'autocannon localhost:3001/without-json' -- node ./dist/index.js prisma",
+    "flamegraph:kysely:json": "pnpm clinic heapprofiler --on-port 'autocannon localhost:3001' -- node ./dist/index.js kysely",
+    "flamegraph:kysely:no-json": "pnpm clinic heapprofiler --on-port 'autocannon localhost:3001/without-json' -- node ./dist/index.js kysely"
   },
   "keywords": [],
   "author": "",
